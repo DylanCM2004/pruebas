@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telas - DILANTEX</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/telas.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>DILANTEX  <span style="font-size: 12px;">&reg</span></h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                    <a href="/html/cortinas.html" class="nav-link">Cortinas</a>
+                    <a href="/html/persianas.html" class="nav-link">Persianas</a>
+                    <a href="/html/accesorios.html" class="nav-link">Accesorios</a>
+                    <a href="/html/telas.html" class="nav-link active">Telas</a>
+                    <a href="/html/contacto.html" class="nav-link">Contacto</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Telas -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Variedad de Telas">
+                    <div class="carousel-caption">
+                        <h1>Amplia Variedad de Telas</h1>
+                        <p>Encuentra el material perfecto para cada proyecto</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Proyecto 3">
+                    <div class="carousel-caption">
+                        <h1>Amplia Variedad de Telas</h1>
+                        <p>Encuentra el material perfecto para cada proyecto</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Proyecto 3">
+                    <div class="carousel-caption">
+                        <h1>Amplia Variedad de Telas</h1>
+                        <p>Encuentra el material perfecto para cada proyecto</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-prev">&#10094;</button>
+            <button class="carousel-btn carousel-next">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Buscador de Telas -->
+    <section class="tela-buscador">
+        <div class="container">
+            <div class="buscador-container">
+                <i class="fas fa-search"></i>
+                <input type="text" id="buscador-telas" placeholder="Buscar telas por nombre...">
+            </div>
+            <div class="buscador-boton-container">
+                <button id="limpiar-busqueda" class="btn-limpiar">Limpiar</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Telas -->
+    <section class="telas-grid-section">
+        <div class="container">
+            <div class="telas-grid" id="telas-grid">
+                <!-- Las tarjetas de tela se generarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Tela -->
+    <div class="modal-tela" id="modal-tela">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2 id="modal-titulo">Nombre Tela</h2>
+            </div>
+            <div class="modal-body">
+                <div class="colores-grid" id="colores-grid">
+                    <!-- Colores se generarán dinámicamente -->
+                </div>
+                <div class="tela-info">
+                    <p><strong>Los colores pueden cambiar con respesto a la tela fisica.</strong></p>
+                    <h3>Características</h3>
+                    <p id="modal-descripcion">Descripción de la tela...</p>
+                    <ul id="modal-caracteristicas">
+                        <!-- Características se generarán dinámicamente -->
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-consultar" id="btn-consultar">
+                    <i class="fas fa-info-circle"></i>
+                    Consultar Disponibilidad
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/3229155349" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DILANTEX  <span style="font-size: 12px;">&reg</span></h3>
+                    <p>Transformando espacios</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 6 # 14-50</p>
+                    <p><i class="fas fa-phone"></i> (322) 915-5349</p>
+                    <p><i class="fas fa-envelope"></i> info@decorhome.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lun-Sab: 9:00 AM - 7:00 PM</p>
+                    <p>Dom y Fest: 11:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/telas.js"></script>
+</body>
+</html>

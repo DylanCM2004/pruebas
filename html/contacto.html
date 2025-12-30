@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - DILANTEX</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/contacto.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>DILANTEX  <span style="font-size: 12px;">&reg</span></h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                    <a href="/html/cortinas.html" class="nav-link">Cortinas</a>
+                    <a href="/html/persianas.html" class="nav-link">Persianas</a>
+                    <a href="/html/accesorios.html" class="nav-link">Accesorios</a>
+                    <a href="/html/telas.html" class="nav-link">Telas</a>
+                    <a href="/html/contacto.html" class="nav-link active">Contacto</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Contacto -->
+    <section class="contacto-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>¡Hablemos! Estamos aquí para ayudarte</h1>
+                <p style="color: white;">Transforma tus espacios con la asesoría de nuestros expertos</p>
+                
+                <!-- Botón WhatsApp Gigante -->
+                <div class="whatsapp-gigante-container">
+                    <a href="#" class="btn-whatsapp-gigante" id="btn-whatsapp-gigante">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="btn-text">Escríbenos por WhatsApp</span>
+                    </a>
+                </div>
+
+                <p class="hero-alternative" style="color: white;">¿Prefieres otro medio? También puedes...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indicador de Tiempos -->
+    <section class="tiempos-respuesta">
+        <div class="container">
+            <div class="tiempos-grid">
+                <div class="tiempo-card">
+                    <div class="tiempo-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="tiempo-info">
+                        <h3>WhatsApp</h3>
+                    </div>
+                </div>
+                <div class="tiempo-card">
+                    <div class="tiempo-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="tiempo-info">
+                        <h3>Llamadas</h3>
+                    </div>
+                </div>
+                <div class="tiempo-card">
+                    <div class="tiempo-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="tiempo-info">
+                        <h3>Email</h3>
+                    </div>
+                </div>
+                <div class="tiempo-card">
+                    <div class="tiempo-icon">
+                        <i class="fas fa-form"></i>
+                    </div>
+                    <div class="tiempo-info">
+                        <h3>Formulario</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonio Mini -->
+    <section class="testimonio-mini">
+        <div class="container">
+            <div class="testimonio-content">
+                <div class="testimonio-text">
+                    <i class="fas fa-quote-left"></i>
+                    <p>"Excelente atención, me respondieron al instante por WhatsApp y resolvieron todas mis dudas sobre las cortinas para mi sala. ¡Quedé encantada con el resultado!"</p>
+                    <div class="testimonio-author">
+                        <strong>María González</strong>
+                        <span>Clienta satisfecha</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="formulario-contacto">
+        <div class="container">
+            <h2>O envíanos un mensaje directo</h2>
+            
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <label for="motivo">Motivo de tu consulta *</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="consulta">Consulta general</option>
+                        <option value="cotizacion">Cotización</option>
+                        <option value="garantia">Garantía</option>
+                        <option value="medidas">Toma de medidas</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ciudad">Ciudad *</label>
+                        <input type="text" id="ciudad" name="ciudad" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="Para visitas a domicilio">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comentario">Comentario o mensaje *</label>
+                    <textarea id="comentario" name="comentario" rows="5" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                </div>
+
+                <div class="form-submit">
+                    <button type="submit" class="btn-enviar">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Solicitud
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Mapa e Información -->
+    <section class="mapa-info">
+        <div class="container">
+            <div class="mapa-content">
+                <div class="mapa-section">
+                    <h2>Visítanos en nuestro local</h2>
+                    <div class="mapa-container">
+                        <!-- Mapa de Google Maps -->
+                        <div class="mapa-embed">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3977.072027171239!2d-74.22005082526188!3d4.581088795393518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9fd7e41be28d%3A0xdc13b5151d99ca85!2sCortinas%20y%20textiles%20DILANTEX!5e0!3m2!1ses!2sco!4v1763955798065!5m2!1ses!2sco" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0; border-radius: 10px;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        
+                        <div class="mapa-info-text">
+                            <div class="direccion">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Carrera 6 # 14-50</strong>
+                                    <p>Soacha - Cundinamarca, Colombia</p>
+                                </div>
+                            </div>
+                            
+                            <a href="https://www.google.com/maps/place/Cortinas+y+textiles+DILANTEX/@4.5810888,-74.2200508,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9fd7e41be28d:0xdc13b5151d99ca85!8m2!3d4.5810888!4d-74.2174759!16s%2Fg%2F11h8k_qg7j?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D" 
+                                target="_blank" 
+                                class="btn-maps">
+                                <i class="fas fa-directions"></i>
+                                Cómo llegar con Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-section">
+                    <h2>Horarios de atención</h2>
+                    <div class="horarios">
+                        <div class="horario-item">
+                            <strong>Lunes a Sábados</strong>
+                            <span>9:00 AM - 7:00 PM</span>
+                        </div>
+                        <div class="horario-item">
+                            <strong>Domingos y Festivos</strong>
+                            <span>11:00 AM - 4:00 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="contacto-adicional">
+                        <h3>Otros medios de contacto</h3>
+                        <div class="contacto-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(+57) 322 915-5349</span>
+                        </div>
+                        <div class="contacto-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@decorhome.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/1234567890" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DILANTEX  <span style="font-size: 12px;">&reg</span></h3>
+                    <p>Transformando espacios</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 6 # 14-50</p>
+                    <p><i class="fas fa-phone"></i> (322) 915-5349</p>
+                    <p><i class="fas fa-envelope"></i> info@decorhome.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lun-Sab: 9:00 AM - 7:00 PM</p>
+                    <p>Dom y Fest: 11:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/contacto.js"></script>
+</body>
+</html>

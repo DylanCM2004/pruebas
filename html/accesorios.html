@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios Hogar - DILANTEX</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/accesorios.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header y Navegación -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h2>DILANTEX  <span style="font-size: 12px;">&reg</span></h2>
+                </div>
+                <div class="nav-menu" id="nav-menu">
+                    <a href="/index.html" class="nav-link">Inicio</a>
+                    <a href="/html/cortinas.html" class="nav-link">Cortinas</a>
+                    <a href="/html/persianas.html" class="nav-link">Persianas</a>
+                    <a href="/html/accesorios.html" class="nav-link active">Accesorios</a>
+                    <a href="/html/telas.html" class="nav-link">Telas</a>
+                    <a href="/html/contacto.html" class="nav-link">Contacto</a>
+                </div>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section Accesorios -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Accesorios de Baño">
+                    <div class="carousel-caption">
+                        <h1>Accesorios para Todo tu Hogar</h1>
+                        <p>Completa cada espacio con elegancia y funcionalidad</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Accesorios de Cocina">
+                    <div class="carousel-caption">
+                        <h1>Calidad y Diseño</h1>
+                        <p>Productos seleccionados para cada rincón de tu casa</p>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Accesorios de Sala">
+                    <div class="carousel-caption">
+                        <h1>Completa tu Decoración</h1>
+                        <p>Desde baños hasta cocinas, tenemos todo lo que necesitas</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn carousel-prev">&#10094;</button>
+            <button class="carousel-btn carousel-next">&#10095;</button>
+            <div class="carousel-dots"></div>
+        </div>
+    </section>
+
+    <!-- Navegación por Espacios -->
+    <section class="espacios-navegacion">
+        <div class="container">
+            <h2>Explora por Espacios</h2>
+            <div class="espacios-buttons">
+                <button class="espacio-btn active" data-espacio="baño">
+                    <i class="fas fa-bath"></i>
+                    <span>Baño</span>
+                </button>
+                <button class="espacio-btn" data-espacio="cocina">
+                    <i class="fas fa-utensils"></i>
+                    <span>Cocina</span>
+                </button>
+                <button class="espacio-btn" data-espacio="dormitorio">
+                    <i class="fas fa-bed"></i>
+                    <span>Dormitorio</span>
+                </button>
+                <button class="espacio-btn" data-espacio="sala">
+                    <i class="fas fa-couch"></i>
+                    <span>Sala</span>
+                </button>
+                <button class="espacio-btn" data-espacio="comedor">
+                    <i class="fas fa-chair"></i>
+                    <span>Comedor</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secciones de Espacios -->
+    <div class="espacios-container">
+        <!-- Sección Baño. -->
+        <section class="espacio-section active" id="baño">
+            <div class="espacio-hero">
+                <img src="/IMAGE/accesorios/sanitario.png" alt="Accesorios Baño">
+                <div class="espacio-hero-content">
+                    <h2>Accesorios para Baño</h2>
+                    <p>Transforma tu baño en un oasis de relajación con nuestra amplia gama de accesorios funcionales y elegantes. Desde juegos completos hasta los más mínimos detalles.</p>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Cortinas de Baño">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Cortinas de Baño</h3>
+                        <p>Impermeables y elegantes, disponibles en múltiples diseños y colores</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Juegos de Baño">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Juegos de Baño Completos</h3>
+                        <p>Sets coordinados incluyen cortina, tapete y accesorios complementarios</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tapetes">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Tapetes Antideslizantes</h3>
+                        <p>Comodidad y seguridad con diseños modernos y absorbentes</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Toallas">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Toallas de Cuerpo</h3>
+                        <p>Suavidad y absorción premium en variedad de tamaños y colores</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Accesorios">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Accesorios de Baño</h3>
+                        <p>Porta jabones, espejos, ganchos y más para completar tu baño</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Cocina -->
+        <section class="espacio-section" id="cocina">
+            <div class="espacio-hero">
+                <img src="/IMAGE/accesorios/cocina.png" alt="Accesorios Cocina">
+                <div class="espacio-hero-content">
+                    <h2>Accesorios para Cocina</h2>
+                    <p>Haz de tu cocina un espacio funcional y acogedor con nuestros accesorios prácticos y decorativos. Lencería y complementos que combinan estilo y utilidad.</p>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Manteles">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Manteles Elegantes</h3>
+                        <p>Variedad de tamaños, materiales y diseños para tu mesa</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Individuales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Juegos de Individuales</h3>
+                        <p>Sets de 6 o 8 unidades con diseños coordinados</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Delantales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Delantales</h3>
+                        <p>Prácticos y con estilo para tus momentos en la cocina</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Toallas de Cocina">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Toallas de Cocina</h3>
+                        <p>Alta absorbencia y durabilidad en diversos diseños</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Guantes">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Guantes de Cocina</h3>
+                        <p>Protección térmica con diseños modernos y ergonómicos</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Organizadores">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Forros para electrodomesticos</h3>
+                        <p>Soluciones prácticas para mantener tu cocina ordenada</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sección Dormitorio -->
+        <section class="espacio-section" id="dormitorio">
+            <div class="espacio-hero">
+                <img src="/IMAGE/accesorios/dormitorio.png" alt="Accesorios Cocina">
+                <div class="espacio-hero-content">
+                    <h2>Accesorios para Dormitorio</h2>
+                    <p>Decora tus habitaciones con accesorios practicos y funcionales, complementando tu entorno con productos de utilidad y acordes a tu estilo.</p>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Manteles">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Sabanas</h3>
+                        <p>Variedad de tamaños, materiales y diseños para tu mesa</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Individuales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Almohadas</h3>
+                        <p>Sets de 6 o 8 unidades con diseños coordinados</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Individuales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Acolchados</h3>
+                        <p>Sets de 6 o 8 unidades con diseños coordinados</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Sección Sala -->
+        <section class="espacio-section" id="sala">
+            <div class="espacio-hero">
+                <img src="/IMAGE/accesorios/sala.png" alt="Accesorios Cocina">
+                <div class="espacio-hero-content">
+                    <h2>Accesorios para Sala</h2>
+                    <p>Un espacio de esparcimiento y relajación merece los mejores accesorios y reflejar la personalidad del hogar, decoralo con los mejores implementos y haz que valga aun más.</p>
+                </div>
+            </div>
+
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Manteles">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Forros de cojin</h3>
+                        <p>Variedad de tamaños, materiales y diseños para tu mesa</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Sección Comedor -->
+        <section class="espacio-section" id="comedor">
+            <div class="espacio-hero">
+                <img src="/IMAGE/accesorios/comedor.png" alt="Accesorios Cocina">
+                <div class="espacio-hero-content">
+                    <h2>Accesorios para Comedor</h2>
+                    <p>Complementa este espacio con decoraciones y suplementos adecuados sin importar la epoca del año con manteles, Individuales, caminos de mesa y más.</p>
+                </div>
+            </div>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Manteles">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Manteles</h3>
+                        <p>Variedad de tamaños, materiales y diseños para tu mesa</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Individuales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Juegos de Individuales</h3>
+                        <p>Sets de 6 o 8 unidades con diseños coordinados</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Individuales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Forro para sillas</h3>
+                        <p>Sets de 6 o 8 unidades con diseños coordinados</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+
+                <div class="producto-card">
+                    <div class="producto-image">
+                        <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Individuales">
+                    </div>
+                    <div class="producto-info">
+                        <h3>Caminos de mesa</h3>
+                        <p>Sets de 6 o 8 unidades con diseños coordinados</p>
+                        <button class="btn-producto">Quiero consultar sus detalles</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/3229155349" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DILANTEX  <span style="font-size: 12px;">&reg</span></h3>
+                    <p>Transformando espacios</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Carrera 6 # 14-50</p>
+                    <p><i class="fas fa-phone"></i> (322) 915-5349</p>
+                    <p><i class="fas fa-envelope"></i> info@decorhome.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <p>Lun-Sab: 9:00 AM - 7:00 PM</p>
+                    <p>Dom y Fest: 11:00 AM - 4:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/accesorios.js"></script>
+</body>
+</html>

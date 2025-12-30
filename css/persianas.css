@@ -1,0 +1,383 @@
+/* Hero Section para páginas internas */
+.page-hero {
+    margin-top: 80px;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide:first-child {
+    opacity: 1;
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    right: 10%;
+    color: white;
+    text-align: center;
+    background: rgba(44, 62, 80, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-prev {
+    left: 20px;
+}
+
+.carousel-next {
+    right: 20px;
+}
+
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-dot.active {
+    background: var(--accent);
+}
+
+/* Tipos de Persianas */
+.persianas-types {
+    padding: 4rem 20px;
+    background: var(--white);
+}
+
+.persianas-types h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.types-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.type-card {
+    background: var(--background);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.type-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.type-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.type-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.type-card:hover .type-image img {
+    transform: scale(1.1);
+}
+
+.type-content {
+    padding: 2rem;
+}
+
+.type-content h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.type-content p {
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.type-content ul {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.type-content li {
+    padding: 0.3rem 0;
+    color: var(--text);
+}
+
+.btn-type {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-type:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Ventajas Section */
+.ventajas {
+    padding: 4rem 20px;
+    background: var(--secondary);
+}
+
+.ventajas h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.ventajas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.ventaja-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.ventaja-card:hover {
+    transform: translateY(-5px);
+}
+
+.ventaja-icon {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.ventaja-card h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.ventaja-card p {
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* Proyectos Realizados */
+.proyectos {
+    padding: 4rem 20px;
+    background: var(--white);
+}
+
+.proyectos h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.filtro-btn {
+    padding: 10px 20px;
+    background: var(--white);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+.filtro-btn.active,
+.filtro-btn:hover {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.proyecto-card {
+    background: var(--background);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.proyecto-card.hidden {
+    display: none;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.proyecto-info {
+    padding: 1.5rem;
+}
+
+.proyecto-info h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.proyecto-info p {
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
+.proyecto-category {
+    display: inline-block;
+    padding: 5px 15px;
+    background: var(--accent);
+    color: var(--white);
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Media Queries - Tablet */
+@media (min-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 3rem;
+    }
+    
+    .types-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .ventajas-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .proyectos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Queries - Desktop */
+@media (min-width: 1024px) {
+    .types-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .ventajas-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .proyectos-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .carousel-caption {
+        left: 15%;
+        right: 15%;
+    }
+}

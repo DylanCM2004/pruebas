@@ -1,0 +1,424 @@
+/* Hero Section Contacto */
+.contacto-hero {
+    margin-top: 80px;
+    padding: 3rem 20px;
+    background: linear-gradient(135deg, var(--primary) 0%, #1a2530 100%);
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--accent);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+/* Botón WhatsApp Gigante */
+.whatsapp-gigante-container {
+    margin: 2rem auto;
+    max-width: 70%;
+}
+
+.btn-whatsapp-gigante {
+    display: block;
+    background: #25D366;
+    color: var(--white);
+    text-decoration: none;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+    border: 2px solid #25D366;
+}
+
+.btn-whatsapp-gigante:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+    background: #128C7E;
+}
+
+.btn-whatsapp-gigante i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.btn-text {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.btn-subtitle {
+    display: block;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.hero-alternative {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+/* Indicador de Tiempos */
+.tiempos-respuesta {
+    padding: 1.5rem 1%;
+    background: var(--white);
+}
+
+.tiempos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tiempo-card {
+    display: flex;
+    align-items: center;
+    background: var(--background);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.tiempo-card:hover {
+    transform: translateY(-3px);
+}
+
+.tiempo-icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--accent);
+}
+
+.tiempo-info h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.tiempo {
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* Testimonio Mini */
+.testimonio-mini {
+    padding: 3rem 20px;
+    background: var(--secondary);
+}
+
+.testimonio-content {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonio-text {
+    position: relative;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.testimonio-text i.fa-quote-left {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: var(--accent);
+    opacity: 0.3;
+}
+
+.testimonio-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text);
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.testimonio-author strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.testimonio-author span {
+    color: var(--text);
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Formulario de Contacto */
+.formulario-contacto {
+    padding: 4rem 20px;
+    background: var(--white);
+}
+
+.formulario-contacto h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid var(--secondary);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    background: var(--background);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.form-submit {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-enviar {
+    padding: 15px 40px;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-enviar:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-enviar i {
+    margin-right: 0.5rem;
+}
+
+/* Mapa e Información */
+.mapa-info {
+    padding: 4rem 20px;
+    background: var(--background);
+}
+
+.mapa-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mapa-section h2,
+.info-section h2 {
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.mapa-container {
+    background: var(--white);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.mapa-embed {
+    width: 100%;
+}
+
+.mapa-info-text {
+    padding: 1.5rem;
+}
+
+.direccion {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.direccion i {
+    font-size: 1.5rem;
+    color: var(--accent);
+    margin-right: 1rem;
+}
+
+.direccion strong {
+    color: var(--primary);
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.direccion p {
+    color: var(--text);
+    margin: 0;
+}
+
+.btn-maps {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 20px;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.btn-maps:hover {
+    background: var(--accent);
+}
+
+.btn-maps i {
+    margin-right: 0.5rem;
+}
+
+/* Información de Horarios y Contacto */
+.horarios {
+    margin-bottom: 2rem;
+}
+
+.horario-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--secondary);
+}
+
+.horario-item:last-child {
+    border-bottom: none;
+}
+
+.horario-item strong {
+    color: var(--primary);
+}
+
+.horario-item span {
+    color: var(--text);
+}
+
+.contacto-adicional h3 {
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    padding: 0.8rem 0;
+    color: var(--text);
+}
+
+.contacto-item i {
+    color: var(--accent);
+    margin-right: 1rem;
+    width: 20px;
+}
+
+/* Media Queries - Tablet */
+@media (min-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .tiempos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .mapa-content {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .btn-text {
+        font-size: 1.8rem;
+    }
+}
+
+/* Media Queries - Desktop */
+@media (min-width: 1024px) {
+    .whatsapp-gigante-container {
+        max-width: 500px;
+    }
+    
+    .btn-whatsapp-gigante {
+        padding: 2.5rem;
+    }
+    
+    .btn-text {
+        font-size: 2rem;
+    }
+}
+
+/* Estados del formulario */
+.form-group input:invalid:not(:focus):not(:placeholder-shown),
+.form-group select:invalid:not(:focus) {
+    border-color: #ff4444;
+}
+
+.form-group input:valid:not(:focus):not(:placeholder-shown),
+.form-group select:valid:not(:focus) {
+    border-color: #00C851;
+}
