@@ -945,7 +945,7 @@ class TelasManager {
     consultarDisponibilidad() {
         const telaNombre = document.getElementById('modal-titulo').textContent;
         const mensaje = `Hola, estoy interesado en la tela "${telaNombre}". ¿Podrían darme información sobre disponibilidad y precios?`;
-        const url = `https://wa.me/1234567890?text=${encodeURIComponent(mensaje)}`;
+        const url = `https://wa.me/3229155349?text=${encodeURIComponent(mensaje)}`;
         window.open(url, '_blank');
     }
 }
@@ -1029,4 +1029,5 @@ class Carousel {
 // Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     new TelasManager();
+
 });
