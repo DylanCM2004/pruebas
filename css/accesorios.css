@@ -220,7 +220,7 @@
 }
 
 .espacio-hero-content p {
-    font-size: 4vw;
+    font-size: 1.2rem;
     line-height: 1.6;
     max-width: 600px;
 }
@@ -350,4 +350,5 @@
     .productos-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
 }
